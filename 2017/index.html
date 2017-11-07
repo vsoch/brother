@@ -240,13 +240,12 @@
           if (svgData.indexOf('<svg') !== -1) {
             prefix = [
               '<?xml version="1.0" encoding="utf-8"?>',
-              '<!-- Generator: KoalasToTheMax.com -->',
               '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'
             ];
             saveAs(new Blob(
               [svgData.replace('<svg', prefix.join(' ') + '<svg')],
               {type: "text/plain;charset=utf-8"}
-            ), "KoalasToTheMax.svg");
+            ), "Brother2017.svg");
           } else {
             console.log('SaveSVG Fail');
           }
